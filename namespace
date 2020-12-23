@@ -1,0 +1,35 @@
+Normalde bir değişken kendi bulunduğu yapı veya scope içinde aranır. Orada yoksa global alanda o değişkeni arar.
+- Şimdi bir yazlım ekibinde ki 10 yazılımcı x değikeni tanımlasa ve bu kodlar tek yerde birleştirilse, hepsi x değişkeni tanımladığı için hata çıkar.
+  Bu hatayı engellemek için her programcı kendisine ait bir isim uzayı yani "namespace" kullanıyorak bu hatanın önüne geçilebilir.
+    
+#include <iostream>
+using namespace std;
+
+namespace Programci1{
+	int x = 15;
+	
+	void foo(){
+		int x = 7;
+		cout << x << endl;
+	}
+}
+
+namespace Programci2{
+	int x = 25;
+	
+	void foo(){
+		int x = 9;
+		cout << x << endl;
+	}
+}
+
+int main(){
+	
+	cout << Programci1::x << endl;		// Programci1 de li x'i bastiriyoruz.
+	cout << Programci2::x << endl;		// Programci2 de ki x'i bastiriyoruz.
+	
+	Programci1::foo();					// Programci1 de ki foo fonksiyonunu cagiriyoruz.
+	Programci2::foo();					// Programci2 de ki foo fonksiyonunu cagiriyoruz.
+	
+	return 0;
+}
