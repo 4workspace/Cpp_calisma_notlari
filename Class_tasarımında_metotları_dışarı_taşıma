@@ -1,0 +1,30 @@
+16. satırda class içinde tanımlanan bir metot dışarıya taşınmış oldu.
+
+#include <iostream>
+using namespace std;
+
+class Nokta{
+public:
+	int x,y;
+	void degerAta(int, int);			// int türünden iki deger alacak bu fonksiyonu dışarı taşıyacağız.
+	void ekranaYaz(){
+		cout << "x: " << x  << endl;
+		cout << "y: " << y  << endl;
+	}
+};
+
+void Nokta::degerAta(int x1, int y1){			// burada degerAta() fonksiyonunu dışarı taşımış olduk.
+	x = x1;
+	y = y1;
+}
+
+int main(){
+	
+	Nokta n;		// n adında br obje tanımlandı.
+	
+	n.degerAta(10,15);					// x=10, y=15 atadık
+	n.ekranaYaz();						// x ve y ekrana yazdırılıyor.
+
+	
+	return 0;
+}
