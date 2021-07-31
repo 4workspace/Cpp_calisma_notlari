@@ -40,7 +40,7 @@ int main() {
 	cout << "uc sayinin toplami: " << a+b+c << endl;
 */
 
-/*	C de ki komutlaar geçerli
+/*	C de ki komutlaar geÃ§erli
 	int a;
 	printf("C de ne varsa aynisi :) :");
 	scanf("%d",&a);
