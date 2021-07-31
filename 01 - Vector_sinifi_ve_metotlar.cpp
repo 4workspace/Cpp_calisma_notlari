@@ -25,7 +25,7 @@ int main() {
 	//cout << kare(12.5);
 	
 	vector<int> v;								// int tipinde ve v adinda bir vector tanimlandi
-	vector<int> v1(5,10);						// int türünde v1 vektoru 5 elemanli ve her elemaninda 10 degeri bulunacak demek
+	vector<int> v1(5,10);						// int tÃ¼rÃ¼nde v1 vektoru 5 elemanli ve her elemaninda 10 degeri bulunacak demek
 	vector<int> v2(10);							// v2 icinde 10 tane sifir barindirir
 	vector<int> v3(&v2[5],&v2[8]);				// v2 nin 5.  elemanindan 8. elemanina kadar kopyala
 	vector<int> v4(v1);							// v1'i v4'e kopyala
