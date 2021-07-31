@@ -8,7 +8,7 @@ template <typename T>		// T adinda bir tamplate tanimladik
 
 void print(vector<T> &v)
 {
-	typename vector<T>::iterator i = v.begin();			//degisken türü (T) ne olacaka belli olmadigi icin basina typname koyduk
+	typename vector<T>::iterator i = v.begin();			//degisken tÃ¼rÃ¼ (T) ne olacaka belli olmadigi icin basina typname koyduk
 	while(i != v.end())
 	{
 		cout<< *i << " ";
@@ -22,12 +22,12 @@ int main() {
 	//cout << kare(12.5);
 	
 	vector<int> v;								// int tipinde ve v adinda bir vector tanimlandi
-	vector<int> v1(5,10);						// int türünde v1 vektoru 5 elemanli ve her elemaninda 10 degeri bulunacak demek
+	vector<int> v1(5,10);						// int tÃ¼rÃ¼nde v1 vektoru 5 elemanli ve her elemaninda 10 degeri bulunacak demek
 	vector<int> v2(10);							// v2 icinde 10 tane sifir barindirir
 	vector<int> v3(&v2[5],&v2[8]);				// v2 nin 5.  elemanindan 8. elemanina kadar kopyala
 	vector<int> v4(v1);							// v1'i v4'e kopyala
 /*	
-	vector<int>::iterator i = v1.begin();		// v vektoru bir iterator döndürüyor
+	vector<int>::iterator i = v1.begin();		// v vektoru bir iterator dÃ¶ndÃ¼rÃ¼yor
 	
 	while(i != v1.end())							// v1 nin son elemanina kadar dongu devam eder yani v nin tum elemanlarini dolasir
 	{
