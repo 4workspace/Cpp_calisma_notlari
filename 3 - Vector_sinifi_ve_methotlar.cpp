@@ -6,9 +6,15 @@
 using namespace std;
 template <typename T>		// T adinda bir tamplate tanimladik
 
+/*
+*	C++ standart kitaplığı vektör sınıfı, dizi kapsayıcıları için bir sınıf şablonudur.
+*	Vektör, belirli bir türdeki öğeleri doğrusal bir düzenlemede depolar ve herhangi bir öğeye hızlı rastgele erişim sağlar.
+*	Bir vektör, rastgele erişim performansı Premium olduğunda bir dizi için tercih edilen kapsayıcıdır.
+*/
+
 void print(vector<T> &v)
 {
-	typename vector<T>::iterator i = v.begin();			//degisken t�r� (T) ne olacaka belli olmadigi icin basina typename koyduk
+	typename vector<T>::iterator i = v.begin();			//degisken türü (T) ne olacaka belli olmadigi icin basina typename koyduk
 	while(i != v.end())
 	{
 		cout<< *i << " ";
@@ -38,7 +44,7 @@ int main() {
 	// vektorun icinden eleman silme
 	//v.erase(v.begin(),v.end());							// bastan sona kadar tum icerigi sildi
 	print(v);
-	v.erase(v.begin()+1,v.end()-1);							// bastan ilk eleman haric (+1 saesinde) sondan bir �ncekine kadar tum icerigi sil anlaminda
+	v.erase(v.begin()+1,v.end()-1);							// bastan ilk eleman haric (+1 saesinde) sondan bir öncekine kadar tum icerigi sil anlaminda
 	print(v);
 	//	v.clear();												// v vektorun tum icerigini siler
 	//	print(v);
