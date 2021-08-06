@@ -10,6 +10,8 @@ template <typename T>		// T adinda bir tamplate tanimladik
 *	C++ standart kitaplığı vektör sınıfı, dizi kapsayıcıları için bir sınıf şablonudur.
 *	Vektör, belirli bir türdeki öğeleri doğrusal bir düzenlemede depolar ve herhangi bir öğeye hızlı rastgele erişim sağlar.
 *	Bir vektör, rastgele erişim performansı Premium olduğunda bir dizi için tercih edilen kapsayıcıdır.
+*	Bu sınıf her türden veri ya da nesne tutabilir.
+*	Ayrıca dinamik yapısı itibariyle eleman yerleştirme veya silinme esnasında otomatik olarak dizi boyutu büyür.
 */
 
 void print(vector<T> &v)
