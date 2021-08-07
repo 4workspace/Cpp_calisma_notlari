@@ -1,6 +1,6 @@
-Threads: Paralel programlamaya imkan verir. örnegin
+Threads: Paralel programlamaya imkan verir. Ã¶rnegin
 
-/********** threads olmayan örnek ***********/
+/********** threads olmayan Ã¶rnek ***********/
 #include <iostream>
 #include <chrono>
 
@@ -28,7 +28,8 @@ int main ()
  return 0;
 }
 
-// Yukarida ki örnekte threads kullanilmadigi için önce print() fonksiyonu çagrilir ve 5 sn orda o islem gerçeklestirir. Daha sonra main içinde ki for döngüsü yürütülür ve 15 sn de orda zaman harcar. Toplamda 25 sn harcamis olur.
+// Yukarida ki Ã¶rnekte threads kullanilmadigi iÃ§in Ã¶nce print() fonksiyonu Ã§agrilir ve 5 sn orda o islem gerÃ§eklestirir. Daha sonra main iÃ§inde ki for dÃ¶ngÃ¼sÃ¼ yÃ¼rÃ¼tÃ¼lÃ¼r
+// ve 15 sn de orda zaman harcar. Toplamda 25 sn harcamis olur.
 
 /***************** threads kullanildiginda ********************/
 
@@ -60,6 +61,7 @@ int main ()
  return 0;
 }
 
-// Yuukarida ki örnekte thread kullanildiginda thread t() içinde ki fonksiyon ve altta ki for ayni anda yürütülür ve toplamda 15 sn harcanmis olur.
+// Yuukarida ki Ã¶rnekte thread kullanildiginda thread t() iÃ§inde ki fonksiyon ve altta ki for ayni anda yÃ¼rÃ¼tÃ¼lÃ¼r ve toplamda 15 sn harcanmis olur.
 
-// NOT: Eger thread içinde ki kodlarin süresi for dan daha fazla olursa, for bittikten sonraa main fonksiyonun sonuna gelmis olur ve thread isini bitirmeden program sonlanmis olur. Bunu engellemek için ise for'dan sonra t.join(); yazilmasi gerek.
+// NOT: Eger thread iÃ§inde ki kodlarin sÃ¼resi for dan daha fazla olursa, for bittikten sonraa main fonksiyonun sonuna gelmis olur ve thread isini bitirmeden program
+// sonlanmis olur. Bunu engellemek iÃ§in ise for'dan sonra t.join(); yazilmasi gerek.
