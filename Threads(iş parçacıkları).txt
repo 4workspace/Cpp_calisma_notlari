@@ -1,4 +1,4 @@
-Threads: Paralel programlamaya imkan verir. örnegin
+/* Threads: Paralel programlamaya imkan verir. örnegin  */
 
 /********** threads olmayan örnek ***********/
 #include <iostream>
